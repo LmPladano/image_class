@@ -23,8 +23,8 @@
                     <h3 class="masthead-brand">Image Classifier</h3>
                     <nav> 
                       <ul class="nav masthead-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                       <li><a href="/history">History</a></li>
+                        <li class="active"><a href="/">Home</a></li>
+                       <li><a href="#">History</a></li>
                         <li><a href="#">About</a></li>
                       </ul>
                     </nav>
@@ -33,20 +33,10 @@
       
                 <div class="inner cover">
 
-                    <div id="back">
-                        <img id="targetImage" width=450 height=300 />
-                    </div>
-                        <p id="classificationHeading"></p>
-                        <div class="form-group">
-                          <input id="imageUrl" type="text" placeholder="Url" class="form-control">
-                          <span class="bmd-help">Paste an image URL here</span>
-                        </div>
-                        <button id="classifyButton" type="button" class="btn btn-success">Classify</button>
-                        <button class="btn btn-danger" id="deleteButton" onclick="document.getElementById('imageUrl').value = ''">Delete</button>
-                    </div>
+                  <ul id="pastSearch"></ul>
             
-                    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-                    <script src="/js/client.js"></script>
+                  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+                  <script src="/public/js/history.js"></script>
               </div>
       
             </div>
