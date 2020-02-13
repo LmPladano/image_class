@@ -6,7 +6,7 @@ const models = require('./models')
 app.use(express.json())
 app.use(express.static('public'))
 
-const PORT = app.set('port', (process.env.PORT || 8080))
+const port = process.env.PORT || 8080
 
 app.get('/',(req,res) => {
     res.sendFile(path.join(__dirname+'/views/index.html'));
@@ -37,6 +37,6 @@ app.post('/send',(req,res) => {
      })
  })
 
-app.listen(PORT,() => {
+app.listen(port,() => {
     console.log('Server is running')
 })
