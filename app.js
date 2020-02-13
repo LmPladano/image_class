@@ -13,7 +13,7 @@ app.get('/',(req,res) => {
 })
 
 app.get('/history',(req,res) => {
-    res.sendFile(path.join(__dirname+'/viewsnoed/history.html'));
+    res.sendFile(path.join(__dirname+'/views/history.html'));
 })
 
 app.post('/send',(req,res) => {

@@ -1,5 +1,5 @@
 let pastSearch = document.getElementById('pastSearch')
-fetch('postgres://quuwbqfh:uUrA0qQHwkofMq2rRpejFgtZYzwtrkRs@rajje.db.elephantsql.com:5432/quuwbqfh').then(response => {
+fetch('http://localhost:3000/test').then(response => {
     return response.json()
   })
   .then(json => {

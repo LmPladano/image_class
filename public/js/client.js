@@ -7,7 +7,7 @@ const classifyButton = document.getElementById('classifyButton')
 const deleteButton = document.getElementById('deleteButton')
 const classificationHeading = document.getElementById('classificationHeading')
 
-fetch('postgres://quuwbqfh:uUrA0qQHwkofMq2rRpejFgtZYzwtrkRs@rajje.db.elephantsql.com:5432/quuwbqfht').then(response => {
+fetch('http://localhost:3000/test').then(response => {
     return response.json()
   })
   .then(json => {
