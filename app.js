@@ -11,7 +11,7 @@ app.get('/',(req,res) => {
 })
 
 app.get('/history',(req,res) => {
-    res.sendFile(path.join(__dirname+'/views/history.html'));
+    res.sendFile(path.join(__dirname+'/viewsnoed/history.html'));
 })
 
 app.post('/send',(req,res) => {
@@ -35,6 +35,6 @@ app.post('/send',(req,res) => {
      })
  })
 
-app.listen(3000,() => {
+app.listen(8080,() => {
     console.log('Server is running...')
 })
