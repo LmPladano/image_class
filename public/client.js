@@ -40,7 +40,7 @@ classifyButton.addEventListener('click',() => {
                 }
                 const jsonString = JSON.stringify(toSend)
                 const xhr = new XMLHttpRequest()
-                xhr.open("POST", "https://postgres://quuwbqfh:uUrA0qQHwkofMq2rRpejFgtZYzwtrkRs@rajje.db.elephantsql.com:5432/quuwbqfh",false)
+                xhr.open("POST", "https://postgres://quuwbqfh:uUrA0qQHwkofMq2rRpejFgtZYzwtrkRs@rajje.db.elephantsql.com:5432/quuwbqfh")
                 xhr.setRequestHeader("Content-Type", "application/json")
                 xhr.send(jsonString)
 
