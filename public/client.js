@@ -42,7 +42,7 @@ classifyButton.addEventListener('click',() => {
                 const xhr = new XMLHttpRequest()
                 xhr.open("POST", "https://postgres://quuwbqfh:uUrA0qQHwkofMq2rRpejFgtZYzwtrkRs@rajje.db.elephantsql.com:5432/quuwbqfh")
                 xhr.setRequestHeader("Content-Type", "application/json")
-                xhr.send(jsonString)
+                xhr.send(jSON)
 
             }
             console.log(results)
