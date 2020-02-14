@@ -31,7 +31,13 @@ app.post('/send',(req,res) => {
 })
 
  app.get("/test", (req, res) => {
-     models.History.findAll()
+     models.History.findAll({
+        limit: 1,
+        where: {
+          //your where conditions, or without them if you need ANY entry
+        },
+        order: [ [ 'createdAt', 'DESC' ]]
+     })
      .then(Histories => {
          res.json(Histories)
      })
