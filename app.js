@@ -26,7 +26,7 @@ app.post('/send',(req,res) => {
         image: image
     })
     history.save().then((persistenthistory) =>{
-        console.log(persistenthistory)
+        res.status(200).send() 
     })
 })
 
