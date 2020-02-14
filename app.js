@@ -30,7 +30,7 @@ app.post('/send',(req,res) => {
     })
 })
 
- app.get("/test", (req, res) => {
+ app.get("/logs", (req, res) => {
      models.History.findAll()
      .then(Histories => {
          res.json(Histories)
