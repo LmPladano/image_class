@@ -5,7 +5,21 @@
   padding-top: 30px;
 }
 #pastSearch li {
+  padding-top: 100px;
   list-style-type: none;
+}
+
+.column {
+  float: left;
+  width: 28.33%;
+  padding: 3px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 

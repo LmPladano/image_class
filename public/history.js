@@ -5,10 +5,10 @@ fetch('	https://imgclasss.herokuapp.com/test').then(response => {
   .then(json => {
     let entries = json.map((entry) => {
 
-        return `<li>
-        <img src="${entry.image}" width="250" height="100">
+        return ` <div class="column"><li>
+        <img src="${entry.image}" width="250" height="200">
           <h5 class="card-title">${entry.label}</h5>
-          </li>`
+          </li></div>`
     })
 
     pastSearch.innerHTML = entries

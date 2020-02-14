@@ -1,9 +1,9 @@
 module.exports = 
 {
   development: {
-    username: "root",
+    username: " ",
     password: null,
-    database: "image_class",
+    database: " ",
     host: "127.0.0.1",
     dialect: "postgres",
     operatorsAliases: false
