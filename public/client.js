@@ -7,7 +7,7 @@ const classifyButton = document.getElementById('classifyButton')
 const deleteButton = document.getElementById('deleteButton')
 const classificationHeading = document.getElementById('classificationHeading')
 
-fetch('https://postgres://quuwbqfh:uUrA0qQHwkofMq2rRpejFgtZYzwtrkRs@rajje.db.elephantsql.com:5432/quuwbqfh').then(response => {
+fetch('https://imgclasss.herokuapp.com/test').then(response => {
     return response.json()
   })
   .then(json => {
