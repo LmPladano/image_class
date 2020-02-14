@@ -32,7 +32,7 @@ app.post('/send',(req,res) => {
 
  app.get("/test", (req, res) => {
      models.History.findAll({
-        limit: 1,
+        limit: 10,
         where: {
           //your where conditions, or without them if you need ANY entry
         },
