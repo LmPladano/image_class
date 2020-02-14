@@ -7,7 +7,7 @@ const classifyButton = document.getElementById('classifyButton')
 const deleteButton = document.getElementById('deleteButton')
 const classificationHeading = document.getElementById('classificationHeading')
 
-fetch('https://imgclasss.herokuapp.com/send').then(response => {
+fetch('https://imgclasss.herokuapp.com/logs').then(response => {
     return response.json()
   })
   .then(json => {
